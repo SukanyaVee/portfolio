@@ -1,0 +1,157 @@
+@import url('https://fonts.googleapis.com/css?family=Barlow+Condensed:300,400,500,600,700,800,900|Dosis:300,400,700,800');
+
+
+
+* {
+ box-sizing: border-box;
+ /* font-family: 'Dosis', sans-serif;  */
+ margin: 0;
+ border: none;
+ color: white;
+}
+
+a {
+  text-decoration: none;
+}
+
+button {
+  /* border: none; */
+  color: white;
+  background: linear-gradient(to bottom, rgb(100,100,95) 21%, rgb(60,60,55) 96%);
+  border-radius: 3px;
+  border: 1px solid rgb(150, 150, 145);
+  padding: 10px;
+}
+
+.App {
+  text-align: center;
+    /* background: rgb(60, 60, 55); */
+  /* padding: 20px; */
+  background-size: cover;
+  height: 100%;
+}
+
+
+
+.App-header {
+  background-color: rgb(100, 100, 95);
+  padding: 20px;
+  height: 250px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-bottom: 5px solid white;
+}
+
+.App-header p {
+  /* font-family: Courier New, Courier, monospace; */
+  font-family: 'Dosis';
+  font-size: 1.5em;
+  color: rgb(250, 210, 0)
+}
+
+p>span {
+  animation: blink 1s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes blink {
+  0% {
+      opacity: 1;
+  }
+  49% {
+      opacity: 1;
+  }
+  50% {
+      opacity: 0;
+  }
+  100% {
+      opacity: 0;
+  }
+}
+
+
+.App-title {
+  font-size: 5em;
+  /* color: rgb(250, 200, 0); */
+  font-family: 'Dosis';  
+  font-weight: 300;
+}
+
+
+main {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-start;
+  height: 100%;
+  background: rgb(100,100,95);
+}
+
+.section-name {
+  text-orientation: upright;
+  writing-mode: vertical-lr;
+  font-family: 'Dosis';
+  font-weight: 700;
+  padding: 3px;
+  padding-top: 10px;
+  padding-bottom: 25px;
+  /* background: linear-gradient(105deg, rgb(100,100,95) 21%, rgb(60,60,55) 96%); */
+  background-color: rgb(150, 150, 145);
+  width: 30px;
+  cursor: pointer;
+  border-left: 2px solid rgb(100,100,95);
+  /* border-bottom: 2px solid rgb(60, 60, 55); */
+  /* height: 100%; */
+}
+
+#section-true {
+  color: rgb(250, 210, 0);
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 90%);
+  /* background: linear-gradient(to right, rgb(100,100,95) 21%, rgb(60,60,55) 96%); */
+
+}
+
+.section-content {
+  /* background: rgb(220,220,210); */
+  /* height: 100%; */
+  /* display: block; */
+  flex:1;
+  padding:25px;
+  transition: ease-in 3s;
+  border-left: 2px solid rgb(150, 150, 145);
+      background: rgb(60, 60, 55);
+
+  height: 100%; 
+}
+
+.projects img {
+  width: 100px;
+  height: 100px;
+  border-radius: 25%;
+  border: 5px solid rgb(150, 150, 145);
+  overflow: hidden;
+  margin-right: 25px;
+}
+
+.proj-upper {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 25px;
+  font-family: Georgia, Times, serif;
+}
+
+.proj-lower {
+  padding: 25px;
+  font-family: 'Dosis';
+}
+
+.contact {
+  /* padding: 50px; */
+}
+
+.skills {
+  font-family: 'Dosis';
+}
