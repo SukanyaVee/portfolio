@@ -1,40 +1,37 @@
 import React, { Component } from 'react';
 import {Link, Route} from 'react-router-dom';
-import logo from './logo.svg';
 import './App.css';
-import Education from './components/Education';
+import About from './components/About';
 import Contact from './components/Contact';
 import Skills from './components/Skills';
 import Projects from './components/Projects';
+import liicon from './assets/linkedin.png';
+import giticon from './assets/git.png';
 
 class App extends Component {
   constructor(){
     super();
     this.state={
-      showSki: true,
-      showEdu: false,
+      showSki: false,
+      showAb: true,
       showProj: false,
       showCon: false
     }
-    this.showS = this.showS.bind(this);
-    this.showE = this.showE.bind(this);
-    this.showP = this.showP.bind(this);
-    this.showC = this.showC.bind(this);
   }
   
   showC(){
     this.setState({
       showCon: true,
-      showEdu: false,
+      showAb: false,
       showProj:false,
       showSki: false
     })
   }
   
-  showE(){
+  showA(){
     this.setState({
       showCon: false,
-      showEdu: true,
+      showAb: true,
       showProj:false,
       showSki: false
     })
@@ -43,7 +40,7 @@ class App extends Component {
   showP(){
     this.setState({
       showCon: false,
-      showEdu: false,
+      showAb: false,
       showProj:true,
       showSki: false
     })
@@ -52,7 +49,7 @@ class App extends Component {
     showS (){
       this.setState({
         showCon: false,
-        showEdu: false,
+        showAb: false,
         showProj:false,
         showSki: true
       })
@@ -63,16 +60,22 @@ class App extends Component {
       <div className="App">
         <header className="App-header">
           <h1 className="App-title">SUKANYA VIJAYAKUMAR</h1><br/><br/>
-          <p>javascript poetry<span> _</span></p>
+          <p>the science and art of web development<span id="blink-blink"> _</span></p>
+          <div className="icons">
+            <a href="https://github.com/SukanyaVee" target="_blank"><img src={giticon} alt="github"/></a>
+            <a href="https://www.linkedin.com/in/sukanyavijayakumar"  target="_blank"><img src={liicon} alt="linkedin"/></a>
+          </div>
         </header>
+          <nav>
+            <div className="section-name"  id={`section-${this.state.showAb}`} onClick={e=>{this.showA()}}>ABOUT</div>
+            <div className="section-name" id={`section-${this.state.showSki}`} onClick={e=>{this.showS()}}>SKILLS</div>
+            <div className="section-name"  id={`section-${this.state.showProj}`} onClick={e=>{this.showP()}}>PROJECTS</div>
+            <div className="section-name"  id={`section-${this.state.showCon}`} onClick={e=>{this.showC()}}>CONTACT</div>
+          </nav>
         <main>
-          <div className='section-name' id={`section-${this.state.showSki}`} onClick={e=>{this.showS()}}>SKILLS</div>
+          {this.state.showAb && <div className="section-content"><About/></div>}
           {this.state.showSki && <div className="section-content"><Skills/></div>}
-          {/* <div className="section-name"  id={`section-${this.state.showEdu}`} onClick={e=>{this.showE()}}>EDUCATION</div>
-          {this.state.showEdu && <div className="section-content"><Education/></div>} */}
-          <div className="section-name"  id={`section-${this.state.showProj}`} onClick={e=>{this.showP()}}>PROJECTS</div>
           {this.state.showProj && <div className="section-content"><Projects/></div>}
-          <div className="section-name"  id={`section-${this.state.showCon}`} onClick={e=>{this.showC()}}>CONTACT</div>
           {this.state.showCon && <div className="section-content"><Contact/></div>}
       </main>
       </div>
