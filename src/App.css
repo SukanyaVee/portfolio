@@ -36,11 +36,18 @@ a {
 }
 
 .App-header p {
-  /* font-family: Courier New, Courier, monospace; */
+  padding: 20px;
   font-family: 'Dosis';
   font-size: 1.5em;
   color: rgb(250, 210, 0);
-  /* border: 2px red solid;   */
+
+}
+
+.App-header h1 {
+  font-size: 4em;
+  /* color: rgb(250, 200, 0); */
+  font-family: 'Dosis';  
+  font-weight: 200;
 }
 
 #blink-blink {
@@ -63,14 +70,6 @@ a {
   }
 }
 
-
-.App-title {
-  font-size: 4em;
-  /* color: rgb(250, 200, 0); */
-  font-family: 'Dosis';  
-  font-weight: 200;
-  /* border: 2px red solid; */
-}
 
 /* .icons */
 
@@ -109,14 +108,11 @@ main {
   font-weight: 700;
   padding: 13px;
   width: calc(100%/4);
-  background: linear-gradient(5deg, rgb(120,120,115) 21%, rgb(150,150,155) 96%);
+  background: linear-gradient(5deg, rgb(120,120,115) 21%, rgb(150,150,145) 96%);
  color: black;
   cursor: pointer;
-  /* border-left: 2px solid rgb(100,100,95); */
   clip-path: polygon(5% 0, 95% 0, 100% 100%, 0 100%);
   margin-left: 2px;
-  /* border-bottom: 2px solid rgb(60, 60, 55); */
-  /* height: 100%; */
 }
 
 #section-true {
@@ -140,14 +136,22 @@ main {
   font-family: 'Dosis';
   letter-spacing: 1px;
   max-width: 800px;
-  /* display: flex;
-  justify-content: center; */
+  display: flex;
+  justify-content: space-around;
   margin: auto;
 }
 
 .about div {
   text-align: left;
   line-height: 2;
+}
+
+.about img {
+  width: 160px;
+  height: 160px;
+  border-radius: 24%;
+  border: 5px solid rgb(150, 150, 145);
+  margin-right: 35px;
 }
 
 .projects {
@@ -275,11 +279,13 @@ textarea {
     justify-content: flex-start;
     /* padding: 10px; */
   }
-  .App-title {
+  .App-header h1 {
     font-size: 1.5em;
   }
+
   .App-header p {
     font-size: 1em;
+
   }
   main {
     flex-direction: column;
@@ -320,5 +326,21 @@ textarea {
     font-size: 2em;
     width: 100%;
   }
-  
+  .about {
+    flex-direction: column;
+  }
+  .contact input {
+    width: calc(100%-20px);
+  }
+  .projects img {
+    width: 50px;
+    height: 50px;
+    border: 3px solid rgb(150, 150, 145);
+    margin-right: 15px;
+  }
+  .proj-title {
+    color: white;
+    font-size: 1.5em;
+    margin-right: 25px;
+  }
 }

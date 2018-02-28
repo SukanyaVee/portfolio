@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import {Link, Route} from 'react-router-dom';
 import './App.css';
 import About from './components/About';
 import Contact from './components/Contact';
@@ -12,7 +11,7 @@ class App extends Component {
   constructor(){
     super();
     this.state={
-      showSki: false,
+      showSki: false, 
       showAb: true,
       showProj: false,
       showCon: false
@@ -59,7 +58,7 @@ class App extends Component {
     return (
       <div className="App">
         <header className="App-header">
-          <h1 className="App-title">SUKANYA VIJAYAKUMAR</h1><br/><br/>
+          <h1>SUKANYA VIJAYAKUMAR</h1>
           <p>the science and art of web development<span id="blink-blink"> _</span></p>
           <div className="icons">
             <a href="https://github.com/SukanyaVee" target="_blank"><img src={giticon} alt="github"/></a>

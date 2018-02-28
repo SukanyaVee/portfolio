@@ -1,5 +1,9 @@
 import React, { Component } from 'react';
-import img from './project-placeholder.png'
+import img from './project-placeholder.png';
+import travel from '../assets/travel.png';
+import indevr from '../assets/indevr.png';
+import dollar from '../assets/dollar.png';
+import portfolio from '../assets/icon.png';
 
 class Projects extends Component {
   render() {
@@ -7,7 +11,7 @@ class Projects extends Component {
       <div className="projects">
         <section>
           <div className="proj-upper">
-            <img src={img}/>
+            <img src={travel||img}/>
             <div className="proj-title">Travelateur</div>
             <div className="proj-links"><a href="https://github.com/SukanyaVee/Travelateur" target="_blank"> See my code on GitHub</a></div>
           </div>
@@ -17,7 +21,7 @@ class Projects extends Component {
         </section>
         <section>
           <div className="proj-upper">
-            <img src={img}/>
+            <img src={indevr||img}/>
             <div  className="proj-title">Indevr</div>
             <div className="proj-links"><a href="https://github.com/SukanyaVee/indevr" target="_blank"> See my code on GitHub</a></div>
           </div>
@@ -28,7 +32,7 @@ class Projects extends Component {
         </section>
         <section>
           <div className="proj-upper">
-            <img src={img}/>
+            <img src={dollar||img}/>
             <div className="proj-title">DollarAlly</div>
             <div className="proj-links"><a href="https://github.com/SukanyaVee/dollarally" target="_blank"> See my code on GitHub</a></div>
           </div>
@@ -39,7 +43,7 @@ class Projects extends Component {
         </section>
         <section>
           <div className="proj-upper">
-            <img src={img}/>
+            <img src={portfolio||img}/>
             <div className="proj-title">This portfolio</div>
             <div className="proj-links"><a href="https://github.com/SukanyaVee/dollarally" target="_blank"> See my code on GitHub</a></div>
           </div>

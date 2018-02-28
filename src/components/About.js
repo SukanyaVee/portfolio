@@ -1,10 +1,11 @@
 import React, { Component } from 'react';
-
+import profpic from '../assets/profpic.jpg'
 
 class About extends Component {
   render() {
     return (
       <div className="about">
+          <span><img src={profpic} alt="Sukanya Vijayakumar"/></span>
         <div>
         I am a full stack developer based in Phoenix, AZ. I create responsive, engaging web apps. <br/><br/>
 
