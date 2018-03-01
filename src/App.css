@@ -180,6 +180,10 @@ main {
   font-size: 2em;
   margin-right: 25px;
 }
+
+.proj-title {
+  text-decoration: none;
+}
 .proj-links {
   font-size: 0.8em;
   margin-right: 25px;

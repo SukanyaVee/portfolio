@@ -24,7 +24,7 @@ class Projects extends Component {
         <section>
           <div className="proj-upper">
             <img src={indevr||img}/>
-            <div  className="proj-title">Indevr</div>
+            <div  className="proj-title"><a href="https://www.indevr.io">Indevr</a></div>
             <div className="proj-links"><a href="https://github.com/SukanyaVee/indevr" target="_blank"> See my code on GitHub</a></div>
           </div>
           <div className="techs"> React  &nbsp;|&nbsp; Redux  &nbsp;|&nbsp; Express  &nbsp;|&nbsp; PostgreSQL  &nbsp;|&nbsp; Auth0  &nbsp;|&nbsp; Unit and Endpoint Testing  &nbsp;|&nbsp; Git branching and merging</div>
@@ -43,6 +43,7 @@ class Projects extends Component {
           <div className="techs"> React  &nbsp;|&nbsp; Redux  &nbsp;|&nbsp; Express  &nbsp;|&nbsp; PostgreSQL  &nbsp;|&nbsp; ChartJS  &nbsp;|&nbsp; bcrypt </div>
             <br/>
           <div className="proj-lower">
+            COMING SOON!<br/>
             This React app started life as an early no-database front-end project during my immersive program at DevMountain, but I have since made enhancements to make it a full stack website. Users can register/log in and log their monthly expenses tagged with certain categories. They can then view expenses by category or all their expenses as a chart or compare it with previous months. 
             (This is a work in progress. If the links don't work or the app doesn't function as intended, please be patient and check back in a bit.)
           </div>
