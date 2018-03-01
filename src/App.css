@@ -183,6 +183,7 @@ main {
 
 .proj-title a {
   text-decoration: none;
+  color: rgb(250, 210, 0);
 }
 .proj-links {
   font-size: 0.8em;
