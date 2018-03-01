@@ -6,7 +6,7 @@ const   express = require('express'),
 
 const app = express();
 app.use(bodyParser.json());
-app.use(express.static(`../build`));
+app.use(express.static(`${_dirname}/../build`));
 
 
 app.post('/message', (req, res) => {
