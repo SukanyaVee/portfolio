@@ -19,7 +19,7 @@ class Contact extends Component {
         .post('/message', {name:name, org:org, email:email, message:message})
         .then(res=>{
 
-          document.getElementById('contact-form').innerHTML= '<p>Message Sent! Thanks!</p>'
+          document.getElementById('contact-form').innerHTML='<p>Message Sent! Thanks!</p>'
           this.setState({
             name:'',
             org:'',

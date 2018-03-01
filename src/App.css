@@ -189,6 +189,13 @@ main {
   text-decoration: none;
 }
 
+.techs {
+  font-family: 'Dosis';
+  color: white;
+  font-size: 16px;
+  text-align: center;
+  font-weight: bold;
+}
 
 .proj-lower {
   padding: 25px;
@@ -318,6 +325,11 @@ textarea {
   .proj-upper {
     padding: 5px;
     font-family: 'Dosis';
+    text-align: left;
+  }
+  .techs {
+    font-weight: 400;
+    font-family: sans-serif;
   }
   .proj-lower {
     display: none;

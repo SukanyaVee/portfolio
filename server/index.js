@@ -24,7 +24,7 @@ app.post('/message', (req, res) => {
         to: process.env.USER,
         subject: `New Message from ${req.body.name} at ${req.body.org}`,
         text: `${req.body.name} (${req.body.email}) at ${req.body.org} sent this message: "${req.body.message}"`,
-        html: `<h4>${req.body.name} (${req.body.email})</h4> at <h3>${req.body.org}</h3> sent this message: <p>"${req.body.message}"</p>`
+        html: `<h4>${req.body.name} </h4><h4>(${req.body.email})</h4> at <h3>${req.body.org}</h3> sent this message: <p>"${req.body.message}"</p>`
     };
 
     transporter.sendMail(mailOptions, function(error, info){
