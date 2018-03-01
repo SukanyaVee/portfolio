@@ -181,7 +181,7 @@ main {
   margin-right: 25px;
 }
 
-.proj-title {
+.proj-title a {
   text-decoration: none;
 }
 .proj-links {
