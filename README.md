@@ -13,6 +13,8 @@ Back end - Express/Node, PostgreSQL
 Projects
 -------------------
 Travelateur - [https://github.com/SukanyaVee/Travelateur](https://github.com/SukanyaVee/Travelateur)
+
 DollarAlly - [https://github.com/SukanyaVee/DollarAlly](https://github.com/SukanyaVee/DollarAlly)
+
 Indevr - [https://github.com/astringham/indevr](https://github.com/astringham/indevr)
 
